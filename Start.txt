@@ -1,0 +1,9 @@
+$env:ENV_FILE=".env.local"
+python -m uvicorn main:app --reload
+
+$env:ENV_FILE=".env.remote"
+python -m uvicorn main:app --reload
+
+curl.exe -s -F "file=@C:\Users\LENOVO\OneDrive\Desktop\Test\Mona_Lisa.jpg" http://127.0.0.1:8000/images/describe
+
+curl.exe -v -F "file=@C:\Users\LENOVO\OneDrive\Desktop\Test\Start.txt" http://127.0.0.1:8000/images/describe
