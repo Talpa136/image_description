@@ -5,3 +5,6 @@ __pycache__/
 .env
 .env.*
 *.env
+!.env.*.example
+!.env.local.example
+!.env.remote.example
